@@ -55,8 +55,7 @@ export function Tiles({
           style={`
               width: ${PIXEL_SIZE}px;
               height: ${PIXEL_SIZE}px;
-              background-color: ${color};
-              opacity: 0.5;
+              background-color: ${color}
             `}
           onClick={() => {
             updateGrid(index, selectedColor);
