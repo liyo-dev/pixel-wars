@@ -9,7 +9,7 @@ export function ColorPicker({
 }) {
   return (
     <footer class="flex gap-8">
-      <div class="flex fixed bottom-4 justify-center left-0 right-0 gap-x-1">
+      <div class="flex fixed bottom-4 right-0 left-0 justify-center">
         {COLORS.map((color) => (
           <button
             class={`
