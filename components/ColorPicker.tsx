@@ -9,8 +9,14 @@ export function ColorPicker({
   selected: Signal<Color>;
 }) {
   return (
-    <footer style="display: flex; justify-content: center">
-      <div style="display: flex; width: 300px">
+    <footer style="display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    bottom: 5px;">
+      <div style="display: flex;
+    justify-content: center;
+    width: 300px;">
         {COLORS.map((color) => (
           <button
             class={`
