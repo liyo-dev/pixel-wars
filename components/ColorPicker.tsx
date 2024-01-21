@@ -1,6 +1,7 @@
 import { type Signal } from "@preact/signals";
-import { COLORS } from "../shared/constants.ts";
+import { COLORS, WIDTH } from "../shared/constants.ts";
 import { Color } from "../shared/types.ts";
+import { FileTextChanges } from "https://deno.land/x/ts_morph@20.0.0/ts_morph.js";
 
 export function ColorPicker({
   selected,
@@ -8,8 +9,8 @@ export function ColorPicker({
   selected: Signal<Color>;
 }) {
   return (
-    <footer class="flex gap-8">
-      <div class="flex fixed bottom-10 left-1/2 transform -translate-x-1/2">
+    <footer style="display: flex; justify-content: center">
+      <div style="display: flex; width: 300px">
         {COLORS.map((color) => (
           <button
             class={`
